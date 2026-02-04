@@ -14,7 +14,7 @@ interface ProjectData{
     link:LinkItem[];
 }
 
-let inputProject:ProjectData (id:number, title:string,
+export let inputProject:ProjectData (id:number, title:string,
     data:Date[],role:string[]|string|string|any,
     details:string[]){
         
