@@ -7,7 +7,7 @@ interface MyDetails{
     role:string[];
 }
 
-const myDetailsData:MyDetails = {
+export const myDetailsData:MyDetails = {
     id:0,
     name:"THITIRAT SIRISAWAD",
     birtday:"14/JUNE/2006",
