@@ -1,13 +1,8 @@
 import React from "react"
-import {MyProject} from './Experience.tsx';
+import { MyProject, ProjectCart } from './Experience.tsx';
 
-const ProjectCart = ({data}:{data:ProjectData})=>{
-    return(
-        <div className="title"><h2></h2></div>
-    )
 
-}
-
+//export my Experiance
 function Experience() {
  
 
@@ -17,7 +12,12 @@ function Experience() {
         <h1>MY EXPERIENCE</h1>
     </div>
     <div className="project-data">
-        {MyProject.map((project)=>(<ProjectCart key={project.id} data={project}/>))}
+        {MyProject.map(
+            (project)=>(
+                /*ส่วนที่ดึงข้อมูล project Data 
+                มาแสดงทีละ id */
+                 <ProjectCart key={project.id}  data={project}/>
+                  ))}
     </div>
     </>
   )
