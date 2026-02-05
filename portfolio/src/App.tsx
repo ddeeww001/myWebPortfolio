@@ -4,7 +4,7 @@ import './App.css'
 import Experience from './frontend/showExperience'
 import { Profile,myDetailsData} from './frontend/Personal'
 import Home from './frontend/Home.tsx'
-import  './picture/profile.jpg'
+import profileImg from './picture/profile.jpg'
 const Navbar=()=>{
   return(
     <div className="navbar">
@@ -14,9 +14,13 @@ const Navbar=()=>{
     <Link to ="/Experience" >Experience</Link>
     <Link to ="/Profile">Profile</Link>
 
-    <Link to="/imgProfile">
-     <img src='./picture/profile.jpg' alt="ddeeww_o_o" className="navbar-profile-pic"/>
+    
+    <Link to="/profileImg">
+     <img alt="ddeeww_o_o" 
+     src={profileImg}  
+     className="navbar-profile-pic"/>
      </Link>
+     
 
     </nav>
     </div>
@@ -38,6 +42,17 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/Experience' element={<Experience/>}/>
         <Route path='/Profile' element={<Profile data={myDetailsData}/>}/>
+
+        {/* สำหรับการแสดงรูปเมื่อถูกกดลงไป */}
+        <Route path='/profileImg' 
+        element={
+        <img 
+        src={profileImg} 
+        className="navbar-profile"
+        />
+        }/>
+
+
       </Routes>
       </div>
       <div className="body">
