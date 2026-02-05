@@ -77,7 +77,7 @@ export const MyProject:ProjectData[]=[
     date:"24/9/2025-31/10/2025",
     role: "Design mascot",
     details:["",
-      " ",
+      "",
       "",
       "" 
     ],
