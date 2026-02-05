@@ -13,87 +13,208 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+
+
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
 }
-a:hover {
-  color: #535bf2;
+
+
+/*////////////////////////////////////////////*/
+/*์Navebar*/
+/* index.css */
+/* index.css */
+
+body {
+  /* สร้างสี Gradient นุ่มๆ หลายๆ สี */
+  background: linear-gradient(-45deg, #1a1a1a, #2c3e50, #242424, #4ca1af);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite; /* สั่งให้ขยับ */
+  min-height: 100vh;
+}
+
+.navbar {
+  /* 1. ตำแหน่ง (ลอยอยู่ด้านบน) */
+  position: fixed;
+  top: 15px; /* ขยับขึ้นไปอีกนิดให้ดูไม่เกะกะ */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* 2. ขนาดที่แคบลงและเพรียวขึ้น */
+  width: 85%; /* ลดความกว้างจากเดิม */
+  height: 40px;
+  max-width: 900px; /* จำกัดไม่ให้ยาวเกินไปแม้จอใหญ่ */
+  padding: 8px 30px; /* ลดความสูง (จากเดิม 15px เหลือ 8px) */
+  
+  /* 3. จัดเนื้อหาชิดขวา (ตามที่ขอ) */
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  
+  /* 4. ดีไซน์แคปซูล */
+  border-radius: 100px; /* ความโค้งสูงสุดให้เป็นวงรี */
+  
+  /* Glassmorphism Effect */
+  background: rgba(36, 36, 36, 0.7); /* เข้มขึ้นนิดนึงเพื่อให้ตัวหนังสือชัด */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  
+  z-index: 1000;
+}
+
+/* กลุ่มเมนู */
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* ลดช่องว่างระหว่างปุ่มลงนิดหน่อย */
+}
+
+/* ปรับปุ่มให้เล็กลงตามบาร์ */
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem; /* ลดขนาดตัวหนังสือเล็กน้อยให้สมส่วน */
+  padding: 8px 20px; /* ลดขนาดปุ่ม */
+  border-radius: 30px;
+  
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* ปรับรูป Profile ให้พอดีกับบาร์ที่เล็กลง */
+.navbar-profile-pic {
+  width: 40px; /* ลดขนาดรูปลงจาก 45px */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-left: 15px; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-profile-pic:hover {
+  transform: scale(1.1);
+  border-color: #ffffff;
+}
+
+/* index.css */
+
+.content-area {
+  /* ดันเนื้อหาลงมาเพื่อให้พ้น Navbar ที่ลอยอยู่ */
+  /* ลองปรับตัวเลขนี้ได้ตามความเหมาะสม (100px - 120px กำลังสวย) */
+  padding-top: 120px; 
+  
+  /* ให้เนื้อหาอยู่กลางจอ (ถ้าต้องการ) */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* --- 1. พื้นหลังลายน้ำเคลื่อนไหว (Animated Background) --- */
+
+
+
+
+
+
+/*/////////////////////////*/
+/* index.css */
+
+/* 1. นำเข้าฟอนต์ Google Fonts: Poppins (ดูทันสมัย น่าใช้งาน) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* กำหนดตัวแปรสีหลัก */
+  --primary-text: #ffffff;
+  --secondary-text: #cbd5e1;
+  --accent-color: #38bdf8; /* สีฟ้าสว่างสำหรับ Link หรือปุ่ม */
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
+  /* ตั้งค่าฟอนต์ใหม่ */
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-text);
+  
+  /* --- ส่วนพื้นหลังน้ำ (Water Background) --- */
+  background-color: #020617; /* สีพื้นหลังสำรอง (ดำน้ำเงินเข้ม) */
+  
+  /* ซ้อน Layer พื้นหลัง:
+     Layer 1 (บนสุด): สีไล่ระดับ ดำ -> น้ำเงินเข้ม (เพื่อให้ดูมืดลึกลับ)
+     Layer 2 (ล่าง): รูปภาพลายน้ำ (Water Caustics) 
+  */
+  background-image: 
+    linear-gradient(to bottom, rgba(2, 6, 23, 0.4), rgba(15, 23, 42, 0.8)),
+    url('https://i.pinimg.com/1200x/be/f4/e5/bef4e592e6dabb18e2ae22301e8fc95d.jpg');
+  
+  background-size: 120% 120%; /* ขยายภาพให้ใหญ่กว่าจอเล็กน้อยเพื่อให้ขยับได้ */
+  background-position: center;
+  background-attachment: fixed; /* ตรึงภาพไว้กับฉากหลัง */
+  
+  /* Animation การเคลื่อนไหวของน้ำ */
+  animation: waterFlow 20s ease-in-out infinite alternate-reverse;
+  
+  overflow-x: hidden; /* ป้องกันไม่ให้มี Scrollbar แนวนอน */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* สร้าง Keyframes ให้พื้นหลังขยับแบบช้าๆ (Drifting Effect) */
+@keyframes waterFlow {
+  0% {
+    background-size: 120% 120%;
+    background-position: 0% 0%;
+  }
+  50% {
+    background-size: 130% 130%; /* ซูมเข้าเล็กน้อย */
+  }
+  100% {
+    background-size: 120% 120%;
+    background-position: 20% 10%; /* ขยับตำแหน่งไปทางขวา */
+  }
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+/* --- ปรับแต่ง Link และ Navbar ให้เข้ากับฟอนต์ใหม่ --- */
+
+a {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: var(--primary-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); /* เรืองแสงสีฟ้า */
 }
 
-/*์Navebar*/
-.navbar{
-
+/* ปรับหัวข้อ (H1) ให้ดูแพงขึ้น */
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px; /* บีบตัวอักษรให้ชิดกันนิดนึง สไตล์ Modern */
+  
+  /* ไล่สีตัวอักษร (Gradient Text) */
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  margin-bottom: 20px;
 }
 
-/*รูป profile*/
-.navbar-profile-pic{
-width: 45px;
-height: 45px;
-/* ปรับความโค้งจนกลม*/
-border-radius: 50%;
+/*///////////////////////////////////////////*/
 
-/*ปรับให้รูปขยายเต็มวงกลมโดยไม่ทำให้สัดส่วนเพี้ยน*/
-object-fit: cover;
-
-transition: transform 0.1s ease;
-cursor: pointer;
-
-}
-
-.navbar-profile-pic:hover{
-transform: scale(2);
-}
-
-.navbar-profile{
-  width: 40%;
-height: 40%px; 
-object-fit: cover;
-border-radius: 5%;
-}

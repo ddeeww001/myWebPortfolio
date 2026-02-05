@@ -39,11 +39,7 @@ function App() {
       <div className="content-area">
       {/*เนื้อหาจะเปลี้ยนไปตาม url */}
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Experience' element={<Experience/>}/>
-        <Route path='/Profile' element={<Profile data={myDetailsData}/>}/>
-
-        {/* สำหรับการแสดงรูปเมื่อถูกกดลงไป */}
+        {/* สำหรับการแสดงรูป */}
         <Route path='/profileImg' 
         element={
         <img 
@@ -51,6 +47,11 @@ function App() {
         className="navbar-profile"
         />
         }/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Experience' element={<Experience/>}/>
+        <Route path='/Profile' element={<Profile data={myDetailsData}/>}/>
+
+        
 
 
       </Routes>
