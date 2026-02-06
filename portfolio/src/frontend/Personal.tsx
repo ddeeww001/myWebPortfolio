@@ -1,4 +1,4 @@
-import React from 'react';
+
 // อย่าลืม import รูปของคุณเข้ามา (ตรวจสอบ path ให้ถูกต้อง)
 // ถ้าชื่อไฟล์คือ 1769004959717.jpg ให้เปลี่ยนชื่อเป็น profile.jpg หรือแก้ path ตรงนี้
 import profileImg from '../picture/profile.jpg'; 
