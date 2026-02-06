@@ -214,8 +214,7 @@ h1 {
   color: transparent;
   
   margin-bottom: 20px;
-  margin-right: 80
-  px;
+  margin-right: 80px;
 }
 
 /*///////////////////////////////////////////*/
@@ -671,4 +670,69 @@ h1 {
   .profile-sidebar {
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
+}
+
+
+/***************************************/
+/*หน้า experiance*/
+/* --- เพิ่มโค้ดส่วนนี้ใน index.css --- */
+
+/* เข้าถึง ul ที่อยู่ในคลาส details */
+.details ul {
+  list-style: none;    /* คำสั่งเอาจุด (Bullet points) ออก */
+
+}
+
+/* เข้าถึง li ที่ชื่อคลาส project-grid */
+.project-grid {
+  text-align: left;   /* ย้ำให้ตัวหนังสือในแต่ละบรรทัดชิดขวา */
+  margin-bottom: 5px;  /* เว้นระยะห่างระหว่างบรรทัดนิดหน่อยให้อ่านง่าย (ปรับได้) */
+}
+
+/**รูปผลงานที่แสดง**/
+/* --- ส่วนตกแต่งการ์ดแสดงผลงาน (Preview Card) --- */
+
+/* 1. ตกแต่งกรอบรวม */
+.preview-card {
+  border-radius: 12px;       /* ทำมุมโค้งมนให้น่ามอง */
+  overflow: hidden;          /* ตัดส่วนเกินของรูปให้อยู่ในกรอบโค้ง */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูลอยมีมิติ */
+  background-color: #1e293b; /* ใส่สีพื้นหลังให้ดูเต็ม */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 15px;          /* เว้นระยะห่างจากด้านบน */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* เส้นขอบบางๆ ให้ดูคม */
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้ */
+.preview-card:hover {
+  transform: translateY(-5px); /* ลอยขึ้นเล็กน้อย */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* เงาเข้มขึ้น */
+}
+
+/* 2. ปรับแก้รูปภาพให้สมส่วน (สำคัญ) */
+.preview-card img {
+  /* ใช้ !important เพื่อบังคับทับค่าที่เขียนไว้ในไฟล์ tsx */
+  width: 100% !important;
+  
+  /* ยกเลิกความสูง 180px แล้วให้มันปรับตามสัดส่วนจอภาพแทน */
+  height: auto !important;
+  
+  /* บังคับสัดส่วนภาพเป็น 16:9 (เหมือนจอคอมพิวเตอร์) ภาพจะดูเต็มและสมส่วน */
+  aspect-ratio: 16 / 9;
+  
+  /* จัดตำแหน่งภาพให้เริ่มจาก "ด้านบน" เสมอ (เพื่อให้เห็นหัวเว็บ ไม่ใช่กลางเว็บ) */
+  object-position: top center !important;
+}
+
+/* 3. ตกแต่งแถบชื่อเว็บด้านล่างรูป */
+.url-name {
+  padding: 12px 20px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
