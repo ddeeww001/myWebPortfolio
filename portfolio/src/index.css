@@ -138,7 +138,7 @@ body {
   /* กำหนดตัวแปรสีหลัก */
   --primary-text: #ffffff;
   --secondary-text: #cbd5e1;
-  --accent-color: #381ee1; /* สีฟ้าสว่างสำหรับ Link หรือปุ่ม */
+  --accent-color: #a497fb; /* สีฟ้าสว่างสำหรับ Link หรือปุ่ม */
 }
 
 body {
@@ -538,7 +538,7 @@ h1 {
 }
 
 .contact-list a, .social-link {
-  color: #9429ff;
+  color: #8ae0ff;
   text-decoration: none;
   transition: color 0.3s;
 }
