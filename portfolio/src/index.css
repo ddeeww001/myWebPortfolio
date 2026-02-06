@@ -214,7 +214,7 @@ h1 {
   color: transparent;
   
   margin-bottom: 20px;
-  margin-right: 80px;
+  margin-left: 9%;
 }
 
 /*///////////////////////////////////////////*/
@@ -697,10 +697,8 @@ h1 {
   border-radius: 12px;       /* ทำมุมโค้งมนให้น่ามอง */
   overflow: hidden;          /* ตัดส่วนเกินของรูปให้อยู่ในกรอบโค้ง */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูลอยมีมิติ */
-  background-color: #1e293b; /* ใส่สีพื้นหลังให้ดูเต็ม */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 15px;          /* เว้นระยะห่างจากด้านบน */
-  border: 1px solid rgba(255, 255, 255, 0.05); /* เส้นขอบบางๆ ให้ดูคม */
 }
 
 /* เอฟเฟกต์ตอนเอาเมาส์ชี้ */
@@ -727,12 +725,146 @@ h1 {
 /* 3. ตกแต่งแถบชื่อเว็บด้านล่างรูป */
 .url-name {
   padding: 12px 20px;
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(161, 174, 205, 0.093);
   color: #cbd5e1;
   font-size: 0.95rem;
   font-weight: 500;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 232, 232, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+/**************************************/
+
+
+/* ================================================================= */
+/* Q-INDUSTRIAL STYLE: EXPERIENCE SECTION REFINED */
+/* ================================================================= */
+
+/* 1. จัดระเบียบ Wrapper หลัก */
+.experience-presentation-wrapper {
+  padding: 180px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh; /* เพิ่มช่องว่างระหว่างโปรเจกต์ */
+  background: transparent;
+}
+
+/* 2. โครงสร้าง Grid แยกเนื้อหาและรูปภาพชัดเจน */
+.snap-section.project-slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* แบ่งครึ่งหน้าจอ */
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 30%;
+  gap: 100px;
+  align-items: center; /* กึ่งกลางแนวตั้ง */
+  min-height: 85vh;
+  position: relative;
+  background: transparent !important; /* เอาพื้นหลังการ์ดออกเพื่อให้เห็นลายน้ำ */
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+
+/* 3. ส่วนเนื้อหา (Text Content) พร้อม Scroll Animation */
+.details, .project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในคอลัมน์ตัวเอง */
+  text-align: center;
+  background: transparent !important;
+  
+  /* Scroll Effect: ขยายขนาดและเปลี่ยนสีเมื่อเลื่อนมาถึง */
+  animation: scrollFocus linear both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes scrollFocus {
+  from { 
+    opacity: 0.2; 
+    transform: scale(0.8); 
+    color: #64748b; 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+    color: #ffffff; 
+  }
+}
+
+.details h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  /* เอฟเฟกต์เปลี่ยนสีหัวข้อเฉพาะ */
+  animation: titleHighlight linear both;
+  animation-timeline: view();
+  animation-range: entry 30% cover 55%;
+}
+
+@keyframes titleHighlight {
+  from { color: #ffffff; }
+  to { color: var(--accent-color); }
+}
+
+
+
+/* 4. ส่วนรูปภาพ (Visual) จัดวางกึ่งกลางและสมส่วน */
+.preview-card {
+ 
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+  
+  /* Scroll Effect สำหรับรูปภาพ */
+  animation: imageReveal linear both;
+  animation-timeline: view();
+  animation-range: entry 15% cover 45%;
+}
+
+@keyframes imageReveal {
+  from { transform: scale(1.1); opacity: 0.4; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+/* 5. ปุ่มลิงก์ผลงาน จัดให้อยู่กึ่งกลาง */
+.url-name {
+  margin: 30px auto 0 auto !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 40px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 100px;
+  background: transparent !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s ease;
+  width: fit-content;
+}
+
+.url-name:hover {
+  background: #fff !important;
+  color: #000 !important;
+  transform: translateY(-5px);
+}
+
+/* 6. RESPONSIVE (มือถือ) */
+@media (max-width: 1024px) {
+  .snap-section.project-slide {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  .preview-card img {
+    height: 350px !important;
+  }
 }

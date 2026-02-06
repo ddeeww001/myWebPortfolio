@@ -125,7 +125,7 @@ export const MyProject:ProjectData[]=[
     //2025//
     {
     id:2,
-    title:"HACKATHON : Dsign mascot → CENTRAL THAM",
+    title:"HACKATHON : Dsign mascot CENTRAL THAM",
     date:"30 / 10 /2025 - 31 / 10 /2025",
     role: "Design mascot",
     details:["Collaborated with a teammate to put our heads together to brainstorm and create a mascot."
