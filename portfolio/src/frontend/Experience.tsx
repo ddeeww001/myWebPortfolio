@@ -142,8 +142,8 @@ export const MyProject:ProjectData[]=[
     id:3,
     title:"GROUP PROJECT :  SMART ACCOUNTING AND MANAGEMENT",
     date:"27 / 8 / 2025",
-    role: "Frontend developer",
-    details:[""
+    role: "Frontend developer, UX/UI Designer",
+    details:["Designed the user interface for product selection and customized dashboards to track sales and restock activities."
     ],
     link:[
         {label:"SMART ACCOUNTING AND MANAGEMENT",url:"https://www.canva.com/design/DAG-RdyzwBM/DpWwYhyVe11hhewbgSG1Aw/view?utm_content=DAG-RdyzwBM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5d0f09fba1"}
