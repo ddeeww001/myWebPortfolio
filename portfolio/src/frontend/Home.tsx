@@ -38,7 +38,7 @@ const Home = () => {
             
             {/* English Section */}
             <div className="msg-en">
-              <h3 style={{fontSize: '1.1rem', color: '#38bdf8', marginBottom: '8px'}}>
+              <h3 style={{fontSize: '1.1rem', color: '#7328ff', marginBottom: '8px'}}>
                 ✉️ Thanks for stopping by!
               </h3>
               <p style={{fontSize: '0.95rem', lineHeight: '1.6', color: '#334155'}}>
@@ -54,7 +54,7 @@ const Home = () => {
 
             {/* Thai Section */}
             <div className="msg-th">
-              <h3 style={{fontSize: '1.1rem', color: '#38bdf8', marginBottom: '8px', fontFamily: "'Poppins', sans-serif"}}>
+              <h3 style={{fontSize: '1.1rem', color: '#7328ff', marginBottom: '8px', fontFamily: "'Poppins', sans-serif"}}>
                 ยินดีต้อนรับนะคะ!
               </h3>
               <p style={{fontSize: '0.95rem', lineHeight: '1.6', color: '#334155'}}>

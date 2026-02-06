@@ -35,7 +35,7 @@ export const myDetailsData: MyDetails = {
     { label: "Instagram", value: "ddeeww_o_o" },
     { label: "Facebook", value: "Dew Chobkinkaitod" }
   ],
-  introduce: "I am a passionate UX/UI Designer and Frontend Developer dedicated to creating intuitive, user-centric digital experiences with clean code and modern design.",
+  introduce: "I am a passionate UX/UI Designer and Frontend Developer dedicated to creating intuitive, user-centric digital experiences with modern design.",
   
   // Technical Skills
   technicalSkills: ["Java", "HTML", "CSS", "React", "TypeScript"],

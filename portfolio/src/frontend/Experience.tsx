@@ -146,7 +146,7 @@ export const MyProject:ProjectData[]=[
     details:[""
     ],
     link:[
-        {label:"SMART ACCOUNTING AND MANAGEMENT",url:"https://www.canva.com/design/DAG-RdyzwBM/BYekc1BDG3PVPnlH221Ltg/edit?utm_content=DAG-RdyzwBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"}
+        {label:"SMART ACCOUNTING AND MANAGEMENT",url:"https://www.canva.com/design/DAG-RdyzwBM/DpWwYhyVe11hhewbgSG1Aw/view?utm_content=DAG-RdyzwBM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5d0f09fba1"}
     ]
     
 },
@@ -158,8 +158,8 @@ export const MyProject:ProjectData[]=[
     details:["Design templates ligth team and dark team for  COLLEG OF ARTS, MEDIA AND TECHNOLOGY"
     ],
     link:[
-        {label:"— LIGHT TEAM",url:"https://www.canva.com/design/DAG-MThjO7s/_hM0Ax7G6yBLDyWw-gaIJg/edit?utm_content=DAG-MThjO7s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"},
-        {label:"— DARK TEAM",url:"https://www.canva.com/design/DAG-MfTGOD0/LXuB1CrFQ6T4gwsjEh26LA/edit?utm_content=DAG-MfTGOD0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"}
+        {label:"— LIGHT TEAM",url:"https://www.canva.com/design/DAG-MThjO7s/QHk_AUP7K2tppS4AOaaVSw/view?utm_content=DAG-MThjO7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb480482753"},
+        {label:"— DARK TEAM",url:"https://www.canva.com/design/DAG-MfTGOD0/8Ecgfe9gtOXGT0X4QVi89Q/view?utm_content=DAG-MfTGOD0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0db13d2742"}
     ]
 },
 
@@ -171,7 +171,8 @@ export const MyProject:ProjectData[]=[
     details:["Design  booklet and poster"
     ],
     link:[
-        {label:"Booklet",url:"https://heyzine.com/flip-book/6c7e35871a.html?ref=web3.camt.cmu.ac.th"}
+        {label:"Booklet",url:"https://heyzine.com/flip-book/6c7e35871a.html?ref=web3.camt.cmu.ac.th"},
+        {label:"Website Web3",url:"https://web3.camt.cmu.ac.th/"}
     ]
 },
 
