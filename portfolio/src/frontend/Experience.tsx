@@ -124,11 +124,11 @@ export const MyProject:ProjectData[]=[
     //2025//
     {
     id:2,
-    title:"Dsign mascot → CENTRAL THAM",
+    title:"HACKATHON : Dsign mascot → CENTRAL THAM",
     date:"30 / 10 /2025 - 31 / 10 /2025",
     role: "Design mascot",
-    details:["Collaborated with a teammate to put our heads together to brainstorm and create a mascot.",
-      "ทำงานร่วมกับธีมได้ช่วยกันคิดออกแบบมาสคอตพร้อมทั้งช่วยกันออกแบบดีไซน์"
+    details:["Collaborated with a teammate to put our heads together to brainstorm and create a mascot."
+      //,"ทำงานร่วมกับธีมได้ช่วยกันคิดออกแบบมาสคอตพร้อมทั้งช่วยกันออกแบบดีไซน์"
     ],
     link:[
         {label:"Google drive",url:"https://drive.google.com/drive/folders/1yHbN5bEUX7J-nh5HPlfEDBv5ML67_Qqt?usp=sharing"},
@@ -153,8 +153,8 @@ export const MyProject:ProjectData[]=[
     title:"Design templates ",
     date:"4 / 11 / 2025 -  8 / 11 / 2025",
     role: "Designner",
-    details:["Design templates ligth team and dark team for  COLLEG OF ARTS, MEDIA AND TECHNOLOGY",
-        "ออกแบบเทมเพลตสำหรับการทำสไลด์โดยมีทั้งทีมสีอ่อนและทีมสีเข่ม สำหรับสาขา DII วิทยาลัยศิลปะ สื่อ และเทคโนโลยี"
+    details:["Design templates ligth team and dark team for  COLLEG OF ARTS, MEDIA AND TECHNOLOGY"
+        //, "ออกแบบเทมเพลตสำหรับการทำสไลด์โดยมีทั้งทีมสีอ่อนและทีมสีเข่ม สำหรับสาขา DII วิทยาลัยศิลปะ สื่อ และเทคโนโลยี"
     ],
     link:[
         {label:"— LIGHT TEAM",url:"https://www.canva.com/design/DAG-MThjO7s/QHk_AUP7K2tppS4AOaaVSw/view?utm_content=DAG-MThjO7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb480482753"},
@@ -167,8 +167,8 @@ export const MyProject:ProjectData[]=[
     title:"CAMT open house : WEB3 Clup,Design,Blochchain,Chaing Mai",
     date:"27 / 8 / 2025",
     role: "Designer",
-    details:["I was responsible for the end-to-end booklet design, logo creation, and design poster customization",
-        "รับผิดชอบในส่วนของการออกแบบบุคเล็ตตั้งแต่ต้นจนจบ การสร้างโลโก้ และ ปรับแต่งโปสเตอร์"
+    details:["I was responsible for the end-to-end booklet design, logo creation, and design poster customization"
+       // ,"รับผิดชอบในส่วนของการออกแบบบุคเล็ตตั้งแต่ต้นจนจบ การสร้างโลโก้ และ ปรับแต่งโปสเตอร์"
     ],
     link:[
         {label:"Booklet",url:"https://heyzine.com/flip-book/6c7e35871a.html?ref=web3.camt.cmu.ac.th"},
@@ -182,9 +182,8 @@ export const MyProject:ProjectData[]=[
     title:" YOUNG DEV HACKATHON",
     date:"11 /  01  /  2026 ",
     role: "STAFF",
-    details:["Addvice and teaching",
-        "I was a team staff and mentored participants on fundamental web design"
-        ,"ทำหน้าที่เป็นสตาฟและเป็นที่ปรึกษาให้ผู้เข้าร่วมในเรื่องทักษะการออกแบบเว็บขั้นพื้นฐาน"
+    details:[ "Instructed participants on the web design process, specifically covering user flows, wireframes, and essential design basics."
+       
     ],
     link:[
         {label:"Facebook",url:"https://www.facebook.com/share/p/1BgvpSZCgo/"}
@@ -195,8 +194,7 @@ export const MyProject:ProjectData[]=[
     title:"HACKATHON : ETHChaingmai",
     date:"28 / 01 /2026 - 3 / 02 / 2026",
     role: "Frontend",
-    details:["Collaborated with my team to integrate a Map API for the assistance page, while also refining the homepage design.",
-        "ร่วมมือกับสมาชิกในทีมเพื่อเชื่อมต่อ API สำหรับแผนที่ในหน้าขอความช่วยเหลือ พร้อมทั้งช่วยปรับแต่งดีไซน์ในหน้าโดเนท"
+    details:["My role involved customizing specific parts of the homepage design. Additionally, I implemented the map feature by connecting to an API to fetch and render location"
     ],
     link:[
         {label:"Project",url:"https://devfolio.co/projects/relief-mesh-7406"},
